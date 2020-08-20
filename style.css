@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body,html{
+	font-family:helvetica,arial,courier;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+h3{
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+
+li, p{
+	font-size: 1rem;
+	list-style: none;
+}
+
+.container{
+	position: relative;
+	display: flex;
+}
+.container::first-letter{
+	text-transform: uppercase;
+}
+/*start aside section stying*/
+.container aside{
+	background-color: rgb(7, 93, 140);
+	color: rgb(255,255,255);
+	width: 25%;
+	padding: .5rem 0;
+
+}
+.container aside .image{
+	width: 100px;
+	height: 100px;
+	margin: -.5rem auto 1rem auto;
+}
+
+.container aside .image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 6px solid rgb(2, 74, 114);
+}
+.container aside h1{
+	background-color: rgb(2, 74, 114);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+.container aside .basic_info{
+	text-align: center;
+}
+.container aside .basic_info span{
+	display: block;
+}
+.container aside h3{
+	background-color: rgb(2, 74, 114);
+	padding-left: 1rem;	
+	margin: 0.2rem 0;
+}
+.container aside .span{
+	padding-left: 1rem;	
+}
+.container aside .fa{
+	font-size: 14px;
+}
+.container aside .unchecked{
+	color: rgb(100, 155, 182);
+}
+/*ends aside section stying*/
+
+
+/*start main section stying*/
+.container main{
+	background-color: rgb(255,255,255);
+    width: 80%;
+	padding-left: 1rem;
+}
+.container main div{
+	padding-bottom: .5rem;
+}
+.container main h5{
+	font-weight: bold;
+}
+.container main .hobby{
+   display: flex;
+}
+.container main .hobby div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem;
+}
+.container main .hobby div:first-child{
+	padding-left: 0;
+}
+	.container main .hobby div .fa{
+		font-size: 1.4rem;
+		padding-top: 0.2rem;
+	}
+/*ends main section stying*/
+
+
+/*start footer section stying*/
+footer{
+	background-color: rgb(7, 93, 140);
+	color: rgb(255,255,255);
+	text-align: center;
+	padding: 0.3rem 0;
+}
+footer p{
+	width: 80%;
+	margin: 0 auto;
+}
+/*ends footer section stying*/
